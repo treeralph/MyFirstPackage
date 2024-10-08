@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    `maven-publish`
 }
 
 android {
@@ -35,6 +36,7 @@ android {
 dependencies {
 
     implementation("com.github.treeralph:MyFirstPackage:Tag")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
