@@ -44,3 +44,16 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                from (components["release"])
+                groupId = "com.github.mint"
+                artifactId = "mint-android-app"
+                version = "0.0.4"
+            }
+        }
+    }
+}
