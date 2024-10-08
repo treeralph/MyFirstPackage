@@ -34,6 +34,7 @@ android {
 
 dependencies {
 
+    implementation("com.github.treeralph:MyFirstPackage:Tag")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
